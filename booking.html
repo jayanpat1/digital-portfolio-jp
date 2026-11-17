@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book a Shoot - Jayan Patel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+    </head>
+    <body>
+        <header>
+            <h1> Book a Shoot </h1>
+        </header>
+        <div class="layout">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="booking.html" class="current">Book a Shoot</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2>How Booking Works</h2>
+            <dl>
+                <div>
+                    <dt><strong>1. Pick a shoot</strong></dt>
+                    <dd>Choose sunset, portrait or event photography.</dd>
+                </div>
+                <div>
+                    <dt><strong>2. Choose a time</strong></dt>
+                    <dd>Pick a day, a time and a place that works for you.</dd>
+                </div>
+                <div>
+                    <dt><strong>3. Send the request</strong></dt>
+                    <dd>I'll reply by email to confirm the details.</dd>
+                </div>
+            </dl>
+
+            <h2 id="book">Book a Photo Shoot</h2>
+            <form action="mailto:jp44748@georgiasouthern.edu" method="post" enctype="text/plain" data-popup-title="Confirm Your Booking Request" data-summary="Name:name;Email:email;Shoot:shoot-type;Date:date;Time:time;Location:location;Package:package" data-name-field="name" data-thanks="Your booking request is ready to send.">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="book-name">Full name</label>
+                            <input type="text" id="book-name" name="name" placeholder="Your full name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="book-email">Email address</label>
+                            <input type="email" id="book-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Type of Shoot</legend>
+                    <div class="option-cards">
+                        <div>
+                            <input type="radio" id="type-sunset" name="shoot-type" value="sunset" required>
+                            <label for="type-sunset"><strong>Sunset</strong><span>Golden hour scenery</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="type-portrait" name="shoot-type" value="portrait">
+                            <label for="type-portrait"><strong>Portrait</strong><span>Individual or group</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="type-event" name="shoot-type" value="event">
+                            <label for="type-event"><strong>Event</strong><span>Parties and gatherings</span></label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>When and Where</legend>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="shoot-date">Date</label>
+                            <input type="date" id="shoot-date" name="date" required>
+                        </div>
+                        <div class="field">
+                            <label for="shoot-time">Time</label>
+                            <input type="time" id="shoot-time" name="time" required>
+                        </div>
+                        <div class="field full">
+                            <label for="shoot-location">Location</label>
+                            <input type="text" id="shoot-location" name="location" list="places" placeholder="Start typing or pick a spot" required>
+                            <datalist id="places">
+                                <option value="Forsyth Park, Savannah">
+                                <option value="Tybee Island">
+                                <option value="River Street, Savannah">
+                                <option value="Your own location">
+                            </datalist>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Package</legend>
+                    <div class="option-cards">
+                        <div>
+                            <input type="radio" id="pkg-mini" name="package" value="mini" required>
+                            <label for="pkg-mini"><strong>Mini</strong><span>30 minutes</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pkg-standard" name="package" value="standard" checked>
+                            <label for="pkg-standard"><strong>Standard</strong><span>1 hour</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pkg-extended" name="package" value="extended">
+                            <label for="pkg-extended"><strong>Extended</strong><span>2 hours</span></label>
+                        </div>
+                    </div>
+                    <div class="field notes">
+                        <label for="shoot-notes">Anything else I should know? (optional)</label>
+                        <textarea id="shoot-notes" name="notes" rows="4" maxlength="400" placeholder="Ideas, number of people, special requests..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Request Booking</button>
+                    <button type="reset" class="secondary">Clear Form</button>
+                </div>
+            </form>
+        </main>
+        </div>
+        <footer>
+            <i><small>Copyright &copy; 2026 Jayan Patel <br>
+            <a href="mailto:jp44748@georgiasouthern.edu">jp44748@georgiasouthern.edu</a></small></i>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

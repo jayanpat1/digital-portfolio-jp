@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact - Jayan Patel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+    </head>
+    <body>
+        <header>
+            <h1> Contact </h1>
+        </header>
+        <div class="layout">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="booking.html">Book a Shoot</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2>Get in Touch</h2>
+            <dl>
+                <div>
+                    <dt><strong>Email</strong></dt>
+                    <dd><a href="mailto:jp44748@georgiasouthern.edu">jp44748@georgiasouthern.edu</a></dd>
+                </div>
+                <div>
+                    <dt><strong>Location</strong></dt>
+                    <dd id="address">Savannah, Georgia.</dd>
+                </div>
+                <div>
+                    <dt><strong>Best way to reach me</strong></dt>
+                    <dd>Email is the best way to reach me, whether it's about IT
+                    opportunities, photography, or anything else on this site.</dd>
+                </div>
+            </dl>
+
+            <h2 id="message">Send Me a Message</h2>
+            <form action="mailto:jp44748@georgiasouthern.edu" method="post" enctype="text/plain" data-popup-title="Confirm Your Message" data-summary="Name:name;Email:email;Reason:reason;Best way to reach you:contact-method;Topics:topics" data-name-field="name" data-thanks="Your message is ready to send.">
+                <fieldset>
+                    <legend>About You</legend>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone number (optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="912-555-0123" pattern="[0-9+()\- ]{7,}" autocomplete="tel">
+                        </div>
+                        <div class="field">
+                            <label for="org">Company or school (optional)</label>
+                            <input type="text" id="org" name="organization" placeholder="Where do you work or study?">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="reason">Reason for contacting me</label>
+                            <select id="reason" name="reason" required>
+                                <option value="">Choose one...</option>
+                                <optgroup label="Opportunities">
+                                    <option value="internship">Internship</option>
+                                    <option value="it-role">IT job</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="photography">Photography</option>
+                                    <option value="hello">Just saying hello</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="source">How did you find this site?</label>
+                            <input type="text" id="source" name="source" list="sources" placeholder="Start typing or pick one">
+                            <datalist id="sources">
+                                <option value="Georgia Southern class">
+                                <option value="Friend or family">
+                                <option value="Search engine">
+                                <option value="Social media">
+                            </datalist>
+                        </div>
+                        <div class="field">
+                            <label for="day">Best day for a reply</label>
+                            <input type="date" id="day" name="reply-day">
+                        </div>
+                        <div class="field">
+                            <label for="rating">Rate this site (1 to 5)</label>
+                            <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="3">
+                        </div>
+                        <div class="field full">
+                            <label for="message-text">Your message</label>
+                            <textarea id="message-text" name="message" rows="5" minlength="10" maxlength="500" placeholder="Write at least 10 characters..." required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="choice-row">
+                        <p class="choice-title">Best way to reach you</p>
+                        <label class="choice"><input type="radio" name="contact-method" value="email" checked> Email</label>
+                        <label class="choice"><input type="radio" name="contact-method" value="phone"> Phone</label>
+                    </div>
+                    <div class="choice-row">
+                        <p class="choice-title">Topics you are interested in</p>
+                        <label class="choice"><input type="checkbox" name="topics" value="networking"> Networking</label>
+                        <label class="choice"><input type="checkbox" name="topics" value="it-support"> IT support</label>
+                        <label class="choice"><input type="checkbox" name="topics" value="photography"> Photography</label>
+                    </div>
+                    <div class="choice-row">
+                        <label class="choice"><input type="checkbox" name="copy" value="yes"> Send me a copy of my message</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Send Message</button>
+                    <button type="reset" class="secondary">Clear Form</button>
+                </div>
+            </form>
+
+            <h2>Common Questions</h2>
+            <div class="faq">
+                <details>
+                    <summary>What should I email you about?</summary>
+                    <p>IT opportunities, internships, photography, or anything else you find on this site.</p>
+                </details>
+                <details>
+                    <summary>Where are you located?</summary>
+                    <p>Savannah, Georgia.</p>
+                </details>
+            </div>
+        </main>
+        </div>
+        <footer>
+            <i><small>Copyright &copy; 2026 Jayan Patel <br>
+            <a href="mailto:jp44748@georgiasouthern.edu">jp44748@georgiasouthern.edu</a></small></i>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

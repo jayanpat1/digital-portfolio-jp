@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Photography - Jayan Patel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon-32.png">
+    </head>
+    <body>
+        <header>
+            <h1> Photography </h1>
+        </header>
+        <div class="layout">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="photography.html" class="current">Photography</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="booking.html">Book a Shoot</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2>Behind the Camera</h2>
+            <dl>
+                <div>
+                    <dt><strong>How did I get into photography?</strong></dt>
+                    <dd>I got into photography by just taking sunset pictures on my phone.</dd>
+                </div>
+                <div>
+                    <dt><strong>What do I like to shoot?</strong></dt>
+                    <dd>I like to shoot sunset and sunrises. I mostly take pictures of anything thats interesting.</dd>
+                </div>
+            </dl>
+
+            <h2 id="gallery">Gallery</h2>
+            <ul class="gallery">
+                <li>
+                    <figure>
+                        <a href="#photo1"><img src="images/sunset2.JPG" alt="Sunset over a backyard"></a>
+                        <figcaption>Backyard Sunset</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo2"><img src="images/sunset1.jpg" alt="Dusk sky reflected over a pond"></a>
+                        <figcaption>Pond at Dusk</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo3"><img src="images/sunset3.jpg" alt="Sun setting between neighborhood"></a>
+                        <figcaption>Neighborhood Sunset</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo4"><img src="images/sunset4.jpg" alt="Orange and purple sunset sky over silhouetted trees"></a>
+                        <figcaption>Street Sunset</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo5"><img src="images/moon.jpg" alt="Full moon in a black night sky"></a>
+                        <figcaption>Full Moon</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo6"><img src="images/snow.jpg" alt="Snow falling past a street lamp and bare tree"></a>
+                        <figcaption>Snowfall</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo7"><img src="images/sunset5.jpg" alt="Pink clouds over a hillside at sunset"></a>
+                        <figcaption>Hillside Sunset</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#photo8"><img src="images/pine.jpg" alt="Tall pine tree against fiery orange clouds"></a>
+                        <figcaption>Pine at Sunset</figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+            <h2>Sunset Slideshow</h2>
+            <figure class="video-box">
+                <video controls preload="metadata" poster="images/video-poster.jpg" width="1280" height="720">
+                    <source src="media/sunsets.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>A short slideshow of my favorite sunset shots</figcaption>
+            </figure>
+
+            <h2 id="vote">Vote for Your Favorite</h2>
+            <form action="mailto:jp44748@georgiasouthern.edu" method="post" enctype="text/plain" class="vote-form" data-popup-title="Confirm Your Vote" data-summary="Favorite photo:favorite-photo;Name:voter-name;Email:voter-email" data-name-field="voter-name" data-thanks="Your vote is ready to send.">
+                <fieldset>
+                    <legend>Photo Contest</legend>
+                    <p class="form-note">Pick the photo you like best, then send your vote.</p>
+                    <div class="vote-grid">
+                        <div class="vote-item">
+                            <input type="radio" id="vote1" name="favorite-photo" value="Backyard Sunset" required>
+                            <label for="vote1">
+                                <img src="images/thumbs/sunset2.jpg" alt="Sunset over a backyard">
+                                <span>Backyard Sunset</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote2" name="favorite-photo" value="Pond at Dusk">
+                            <label for="vote2">
+                                <img src="images/thumbs/sunset1.jpg" alt="Dusk sky reflected over a pond">
+                                <span>Pond at Dusk</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote3" name="favorite-photo" value="Neighborhood Sunset">
+                            <label for="vote3">
+                                <img src="images/thumbs/sunset3.jpg" alt="Sun setting between neighborhood">
+                                <span>Neighborhood Sunset</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote4" name="favorite-photo" value="Street Sunset">
+                            <label for="vote4">
+                                <img src="images/thumbs/sunset4.jpg" alt="Orange and purple sunset sky over silhouetted trees">
+                                <span>Street Sunset</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote5" name="favorite-photo" value="Full Moon">
+                            <label for="vote5">
+                                <img src="images/thumbs/moon.jpg" alt="Full moon in a black night sky">
+                                <span>Full Moon</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote6" name="favorite-photo" value="Snowfall">
+                            <label for="vote6">
+                                <img src="images/thumbs/snow.jpg" alt="Snow falling past a street lamp and bare tree">
+                                <span>Snowfall</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote7" name="favorite-photo" value="Hillside Sunset">
+                            <label for="vote7">
+                                <img src="images/thumbs/sunset5.jpg" alt="Pink clouds over a hillside at sunset">
+                                <span>Hillside Sunset</span>
+                            </label>
+                        </div>
+                        <div class="vote-item">
+                            <input type="radio" id="vote8" name="favorite-photo" value="Pine at Sunset">
+                            <label for="vote8">
+                                <img src="images/thumbs/pine.jpg" alt="Tall pine tree against fiery orange clouds">
+                                <span>Pine at Sunset</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-grid vote-details">
+                        <div class="field">
+                            <label for="voter-name">Your name</label>
+                            <input type="text" id="voter-name" name="voter-name" placeholder="Your name" required>
+                        </div>
+                        <div class="field">
+                            <label for="voter-email">Your email</label>
+                            <input type="email" id="voter-email" name="voter-email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-buttons">
+                    <button type="submit">Submit My Vote</button>
+                    <button type="reset" class="secondary">Clear Vote</button>
+                </div>
+            </form>
+
+            <div class="lightbox" id="photo1">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/sunset2.JPG" alt="Sunset over a backyard">
+                    <figcaption>Backyard Sunset</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo2">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/sunset1.jpg" alt="Dusk sky reflected over a pond">
+                    <figcaption>Pond at Dusk</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo3">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/sunset3.jpg" alt="Sun setting between neighborhood">
+                    <figcaption>Neighborhood Sunset</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo4">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/sunset4.jpg" alt="Orange and purple sunset sky over silhouetted trees">
+                    <figcaption>Street Sunset</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo5">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/moon.jpg" alt="Full moon in a black night sky">
+                    <figcaption>Full Moon</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo6">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/snow.jpg" alt="Snow falling past a street lamp and bare tree">
+                    <figcaption>Snowfall</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo7">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/sunset5.jpg" alt="Pink clouds over a hillside at sunset">
+                    <figcaption>Hillside Sunset</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+
+            <div class="lightbox" id="photo8">
+                <a class="lightbox-bg" href="#gallery" aria-label="Close photo"></a>
+                <figure>
+                    <img src="images/pine.jpg" alt="Tall pine tree against fiery orange clouds">
+                    <figcaption>Pine at Sunset</figcaption>
+                </figure>
+                <a class="close" href="#gallery" aria-label="Close photo">&times;</a>
+            </div>
+        </main>
+        </div>
+        <footer>
+            <i><small>Copyright &copy; 2026 Jayan Patel <br>
+            <a href="mailto:jp44748@georgiasouthern.edu">jp44748@georgiasouthern.edu</a></small></i>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
